@@ -1,0 +1,4 @@
+v7.1.22
+- Makes AFTER DARK on the main invitation page more prominent.
+- It remains clearly smaller than THE MATRIX.
+- No other layout, wording, animation, audio, RSVP, phone, rain, or final-screen changes.

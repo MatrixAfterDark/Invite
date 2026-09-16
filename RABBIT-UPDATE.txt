@@ -1,0 +1,6 @@
+v7.1.12 Rabbit display update
+- Replaced the cropped rabbit source with a full-body Matrix-style rabbit asset.
+- Transparent background for the website icon.
+- All ears, legs, paws and tail remain inside frame.
+- Rabbit uses object-fit: contain and visible overflow so mobile/desktop layouts do not crop it.
+- Continuous phone-feed behavior from v7.1.11 is unchanged.

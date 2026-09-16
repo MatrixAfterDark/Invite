@@ -1,0 +1,12 @@
+Add character images here, then list them in config.js.
+Suggested filenames:
+neo.jpg
+trinity.jpg
+morpheus.jpg
+niobe.jpg
+cypher.jpg
+agent-smith.jpg
+twins.jpg
+bugs.jpg
+merovingian.jpg
+seraph.jpg

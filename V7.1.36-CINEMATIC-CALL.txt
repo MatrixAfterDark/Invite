@@ -1,0 +1,15 @@
+v7.1.36
+Opening / phone cinematic enhancement only.
+
+- Adds subtle synthesized retro terminal ticks as opening letters appear.
+  Note: browsers that prohibit audio before the first user gesture may keep these
+  pre-click ticks silent; the invitation remains fully functional.
+- Longer Morpheus call is designed for ~16 seconds.
+- At playback position 13.0 seconds the phone scene begins transitioning.
+- Phone display/status briefly changes to TRACE DETECTED.
+- Restrained signal tear / instability appears during takeover.
+- Phone fades into dense Matrix rain while Morpheus continues speaking.
+- Existing boot messages run during the final dialogue.
+- White flash and invitation reveal wait for the actual Morpheus audio ended event.
+- Phone-feed continues through the transition and fades only after invite reveal.
+- No invitation, gallery, RSVP, pill, final-screen, wording, or other design changes.

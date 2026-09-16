@@ -1,0 +1,6 @@
+v7.1.27
+- Removed // from the main event title.
+- AFTER DARK is centered again.
+- Kept the same larger font size.
+- Reduced AFTER DARK font weight to create clearer hierarchy beneath THE MATRIX.
+- No other changes.

@@ -1,0 +1,16 @@
+ADD THESE AUDIO FILES TO assets/audio/
+
+ringtone.mp3
+morpheus-call.mp3
+background-music.mp3
+morpheus-red-pill.mp3
+blue-pill.mp3  (optional)
+
+EDIT PARTY DETAILS IN config.js
+
+PERSONALISED LINK EXAMPLE
+?name=James
+
+THE RED PILL EMAIL SUBJECT WILL INCLUDE THAT NAME.
+
+assets/audio/phone-feed.mp3 — phone connection texture under Morpheus

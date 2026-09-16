@@ -1,0 +1,7 @@
+v7.1.39
+Changed only the phone-to-Matrix transition pacing:
+- Matrix takeover cue begins at 10 seconds instead of 13 seconds.
+- Morpheus audio continues uninterrupted over the transition.
+- Existing boot/system messages have more readable hold time where their existing timing hooks allow.
+- Invitation reveal still waits for the actual Morpheus audio end.
+- Everything else remains unchanged from v7.1.38.

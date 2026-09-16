@@ -1,0 +1,4 @@
+v7.1.23
+- Removes the visible green hover/focus circle from the old phone button hotspot.
+- The whole phone remains clickable/tappable to answer.
+- No other design, audio, animation, RSVP, wording, or final-screen changes.

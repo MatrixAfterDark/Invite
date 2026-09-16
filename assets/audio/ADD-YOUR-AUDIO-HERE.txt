@@ -1,0 +1,12 @@
+Add these files with these exact names:
+
+ringtone.mp3
+morpheus-call.mp3
+phone-feed.mp3
+background-music.mp3
+morpheus-red-pill.mp3
+blue-pill.mp3
+
+phone-feed.mp3 is the Matrix-style phone connection/trace texture. It begins
+when the call is answered, plays quietly under Morpheus, continues briefly
+after his last word, and then fades into the green-rain transition.

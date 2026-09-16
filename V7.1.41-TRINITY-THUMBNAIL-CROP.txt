@@ -1,0 +1,5 @@
+v7.1.41
+Changed only Trinity's small gallery thumbnail crop.
+- Repositioned Trinity within the 3:4 thumbnail to show more of the top of her head.
+- Enlarged/clicked character image is unchanged and still uses the full image.
+- Everything else unchanged from v7.1.40.

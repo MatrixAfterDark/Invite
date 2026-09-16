@@ -1,0 +1,8 @@
+v7.1.32
+- Added Persephone to the actual gallery configuration.
+- Persephone image path: assets/images/characters/persephone.jpg
+- Position: after Seraph, before The Twins.
+- Removed Cypher, Bugs and The Merovingian from the gallery configuration.
+- No visual/layout/audio/RSVP changes.
+
+IMPORTANT: name the supplied real photo exactly: persephone.jpg

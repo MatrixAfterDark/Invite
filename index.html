@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <title>The Matrix: After Dark</title>
+  <meta name="description" content="A personalised interactive invitation to The Matrix: After Dark.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix-rain" aria-hidden="true"></canvas>
+  <div id="crt-scanlines" aria-hidden="true"></div>
+  <div id="screen-flash" aria-hidden="true"></div>
+  <div id="screen-vignette" aria-hidden="true"></div>
+
+  <main id="experience">
+    <section id="scene-opening" class="scene is-active" aria-label="Opening transmission">
+      <div class="terminal opening-copy">
+        <p id="opening-line-1"></p>
+        <p id="opening-line-2"></p>
+        <p id="opening-line-3"></p>
+        <div id="rabbit-choice" class="rabbit-choice" hidden>
+          <button id="rabbit-image-button" class="rabbit-image-button" type="button" aria-label="Follow the White Rabbit">
+            <img id="rabbit-image" src="assets/images/ui/white-rabbit.png" alt="Pixel rabbit rendered in the same green terminal style as the opening transmission">
+          </button>
+          <button id="follow-rabbit" class="terminal-link" type="button" disabled>
+            CLICK TO FOLLOW THE WHITE RABBIT
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="scene-phone" class="scene" aria-label="Incoming call">
+      <div class="phone-stage">
+        <canvas id="phone-code" class="phone-code" aria-hidden="true"></canvas>
+        <div id="phone-aura" class="phone-aura" aria-hidden="true"></div>
+        <div class="phone-wrap" id="phone-wrap">
+          <img id="phone-image" src="assets/images/ui/phone.png" alt="A late-1990s mobile phone displaying an incoming call from Morpheus">
+        </div>
+        <div id="audio-on-cue" class="audio-on-cue" aria-hidden="true">AUDIO ON</div>
+        <button id="answer-call" class="terminal-link answer-call" type="button">ANSWER THE CALL</button>
+        <p id="phone-status" class="terminal phone-status" aria-live="polite">INCOMING TRANSMISSION...</p>
+      </div>
+    </section>
+
+    <section id="scene-entry" class="scene" aria-label="Entering the Matrix">
+      <div id="entry-status" class="terminal system-status" aria-live="polite"></div>
+    </section>
+
+    <section id="scene-invite" class="scene scene-scroll" aria-label="Party invitation">
+      <article id="invite" class="invite-shell terminal">
+        <header class="invite-hero">
+          <p class="eyebrow">YOU HAVE BEEN CHOSEN</p>
+          <h1 class="matrix-logo"><span>THE</span> MATRIX</h1>
+          <p class="event-subtitle">AFTER DARK</p>
+          <p class="personal-greeting">WELCOME, <span data-guest-name></span>.</p>
+        </header>
+
+        <section class="invite-section briefing-section">
+          <h2>MISSION BRIEFING</h2>
+          <div id="briefing-copy" class="briefing-copy"></div>
+        </section>
+
+        <section class="invite-section">
+          <h2>MISSION PARAMETERS</h2>
+          <dl class="parameters">
+            <div><dt>DATE</dt><dd id="event-date"></dd></div>
+            <div><dt>TIME</dt><dd id="event-time"></dd></div>
+            <div><dt>COORDINATES</dt><dd id="event-venue"></dd></div>
+            <div><dt>OPERATOR ATTIRE</dt><dd id="event-dress"></dd></div>
+          </dl>
+        </section>
+
+        <section class="invite-section countdown-section">
+          <h2>COUNTDOWN TO AFTER DARK</h2>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div><strong id="days">000</strong><span>DAYS</span></div>
+            <div><strong id="hours">00</strong><span>HRS</span></div>
+            <div><strong id="minutes">00</strong><span>MINS</span></div>
+            <div><strong id="seconds">00</strong><span>SECS</span></div>
+          </div>
+        </section>
+
+        <section class="invite-section matrix-core-section">
+          <h2>MATRIX GRUNGE // OUTFIT INSPIRATION</h2>
+          <p class="section-intro">BUILD YOUR RESIDUAL SELF IMAGE. SELECT A FILE FOR DETAILS.</p>
+          <div id="character-gallery" class="character-gallery"></div>
+          <p id="empty-gallery" class="empty-gallery" hidden>
+            ADD CHARACTER IMAGES TO <code>assets/images/characters/</code> AND LIST THEM IN <code>config.js</code>.
+          </p>
+        </section>
+
+        <section class="invite-section choice-section" id="choice-section">
+          <p class="eyebrow">FINAL TRANSMISSION // MORPHEUS</p>
+          <h2>THE CHOICE IS YOURS</h2>
+          <div class="choice-dialogue">
+            <p><span data-guest-name></span>,</p>
+            <p>I CAN ONLY SHOW YOU THE DOOR.</p>
+            <p>YOU'RE THE ONE THAT HAS TO WALK THROUGH IT.</p>
+            <p>WILL YOU JOIN US INSIDE THE MATRIX?</p>
+          </div>
+
+          <div class="pill-options">
+            <button id="red-pill-button" class="pill-button red" type="button" aria-label="Choose the red pill, enter the Matrix and confirm attendance">
+              <img src="assets/images/ui/red-pill.png" alt="A realistic glowing red capsule">
+              <span>ENTER THE MATRIX</span>
+              <small>CONFIRM PRESENCE</small>
+            </button>
+            <button id="blue-pill-button" class="pill-button blue" type="button" aria-label="Choose the blue pill and restore the simulation">
+              <img src="assets/images/ui/blue-pill.png" alt="A realistic glowing blue capsule">
+              <span>REMAIN ASLEEP</span>
+              <small>RESTORE SIMULATION</small>
+            </button>
+          </div>
+          <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
+        </section>
+      </article>
+    </section>
+
+    <section id="scene-blue" class="scene" aria-label="Blue pill outcome">
+      <div class="terminal outcome-copy blue-outcome-wrap">
+        <div id="blue-status" aria-live="polite"></div>
+        <button id="blue-reconnect-red" class="blue-reconnect-red" type="button" aria-label="Choose the red pill and reconnect to the Matrix" hidden>
+          <img src="assets/images/ui/red-pill.png" alt="A realistic glowing red capsule">
+          <span class="blue-reconnect-primary">TAKE THE RED PILL</span>
+          <small class="blue-reconnect-secondary">ACCEPT THE INVITATION</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="scene-red" class="scene" aria-label="Red pill connection sequence">
+      <div id="red-status" class="terminal system-status red-status" aria-live="polite"></div>
+    </section>
+
+    <section id="scene-final" class="scene" aria-label="Welcome to the Matrix">
+      <div class="terminal final-copy">
+        <p id="final-system" class="eyebrow"></p>
+        <p id="final-welcome-pre" class="final-welcome-pre"></p>
+        <h1 id="final-welcome" class="matrix-logo final-logo"></h1>
+        <p id="final-name" class="final-name"></p>
+        <p id="final-verified"></p>
+        <p id="final-presence"></p>
+        <p id="final-event-message"></p>
+        <div class="final-mission-details" id="final-mission-details" hidden>
+          <div class="final-divider" aria-hidden="true"></div>
+          <p class="final-label">MISSION DATE</p>
+          <p id="final-date" class="final-date"></p>
+          <p class="final-label final-countdown-label">COUNTDOWN TO EXTRACTION</p>
+          <div class="countdown final-countdown" aria-live="polite">
+            <div><strong id="final-days">000</strong><span>DAYS</span></div>
+            <div><strong id="final-hours">00</strong><span>HRS</span></div>
+            <div><strong id="final-minutes">00</strong><span>MINS</span></div>
+            <div><strong id="final-seconds">00</strong><span>SECS</span></div>
+          </div>
+          <button id="access-mission-file" class="mission-file-trigger" type="button">[ ACCESS MISSION FILE ]</button>
+        </div>
+        <div id="mission-file-overlay" class="mission-file-overlay" aria-hidden="true">
+          <div class="mission-file-panel" role="dialog" aria-modal="true" aria-labelledby="mission-file-title">
+            <div id="mission-file-title" class="mission-file-title">MISSION FILE // AFTER DARK</div>
+            <div class="mission-file-rule"></div>
+            <div class="mission-file-label">DATE</div><div>Saturday, 7 November 2026</div>
+            <div class="mission-file-label">TIME</div><div>7:00 PM</div>
+            <div class="mission-file-label">COORDINATES</div><div>BOYLE HQ<br>Unit B4<br>2 Currie Cres, Griffith ACT</div>
+            <div class="mission-file-label">OPERATOR ATTIRE</div><div>Matrix Grunge</div>
+            <button id="close-mission-file" class="mission-file-close" type="button">[ CLOSE MISSION FILE ]</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="character-dialog">
+    <button id="close-character" type="button" aria-label="Close character inspiration">×</button>
+    <img id="character-dialog-image" alt="">
+    <h3 id="character-dialog-name"></h3>
+    <p id="character-dialog-note"></p>
+  </dialog>
+
+  <audio id="audio-ringtone" preload="auto" loop playsinline></audio>
+  <audio id="audio-morpheus-call" preload="auto" playsinline></audio>
+  <audio id="audio-phone-feed" preload="auto" playsinline></audio>
+  <audio id="audio-background" preload="auto" loop playsinline></audio>
+  <audio id="audio-morpheus-red" preload="auto" playsinline></audio>
+  <audio id="audio-blue" preload="auto" playsinline></audio>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

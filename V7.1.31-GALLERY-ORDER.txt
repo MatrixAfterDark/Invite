@@ -1,0 +1,12 @@
+v7.1.31
+Gallery display order set to:
+1. Neo
+2. Trinity
+3. Morpheus
+4. Agent Smith
+5. Niobe
+6. Seraph
+7. Persephone (reserved position; card appears once real photo is added)
+8. The Twins
+
+No other changes.

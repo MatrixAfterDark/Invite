@@ -1,0 +1,6 @@
+v7.1.40
+Fixed the remaining phone-to-Matrix timing triggers:
+- timeupdate handoff: 13s -> 10s
+- fallback handoff timer: 13s -> 10s
+- existing 10s initial check retained
+- everything else unchanged from v7.1.39

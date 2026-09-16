@@ -1,0 +1,5 @@
+v7.1.35
+Mission Briefing formatting adjustment only:
+- "green code, black leather and cyberpunk shades." is no longer bold.
+- "Your mission is simple:" remains bold.
+No wording or other site behavior/design changed.

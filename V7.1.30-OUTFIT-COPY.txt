@@ -1,0 +1,18 @@
+v7.1.30 — outfit inspiration copy update
+
+Updated the approved character styling descriptions:
+- Neo
+- Trinity
+- Morpheus
+- Niobe (renamed from Captain Niobe)
+- Agent Smith
+- The Twins
+- Seraph
+
+Persephone approved copy:
+Blood-red leather, sculpted silhouette, sleek hair, decadent glamour.
+
+Persephone is not yet inserted as a card because the gallery uses real/reference
+photos and no Persephone photo has been supplied in the site assets yet.
+
+No design, layout, animation, audio, phone, RSVP, rain, title, or final-screen changes.

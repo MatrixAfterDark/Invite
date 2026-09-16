@@ -1,0 +1,11 @@
+v7.1.18 — wording-only update
+
+No design, visual layout, animation, audio, rain, phone, rabbit, RSVP, or interaction changes.
+
+Updated:
+- Mission Briefing to the approved wording.
+- Mission Parameters:
+  DATE — Saturday, 7 November 2026
+  TIME — 7:00 PM
+  COORDINATES — Boyle HQ / Unit B4 / 2 Currie Cres, Griffith ACT
+  OPERATOR ATTIRE — Matrix Grunge

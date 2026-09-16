@@ -1,0 +1,5 @@
+v7.1.42
+Changed only Trinity's small gallery thumbnail position again.
+- Shifted the image down by approximately the same amount as the previous adjustment.
+- Enlarged/clicked Trinity image remains unchanged.
+- Everything else unchanged from v7.1.41.

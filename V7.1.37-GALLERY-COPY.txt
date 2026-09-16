@@ -1,0 +1,6 @@
+v7.1.37
+Gallery copy changes only:
+TRINITY — Glossy black leather, oval shades, slicked-back hair, razor-sharp attitude.
+NIOBE — Structured leather, sleek shades, statement hair, tactical edge.
+
+Everything else remains as v7.1.36.

@@ -1,0 +1,5 @@
+v7.1.20
+- Adds small blinking terminal-green "AUDIO ON" beneath the phone.
+- Makes the whole phone image clickable/tappable to answer, not only the small answer button.
+- AUDIO ON disappears immediately once answered.
+- Preserves the existing mobile-safe Morpheus audio start and all other design/behavior.

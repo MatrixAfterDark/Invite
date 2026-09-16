@@ -1,0 +1,4 @@
+v7.1.14
+Rabbit pixels now use the exact opening terminal CSS green: #86ff91.
+Diffuse image glow/background was removed; only crisp rabbit pixels remain transparent around the symbol.
+Phone-feed volume/timing and all other v7.1.13 behavior are unchanged.

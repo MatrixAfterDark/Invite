@@ -1,0 +1,12 @@
+v7.1.21 — Red Pill final-screen fix
+
+Cause:
+The earlier LIBATIONS -> AFTER DARK replacement also altered internal HTML/CSS/JS
+identifiers, creating selectors containing a space. That caused the Red Pill final
+sequence to stop before the mission date/countdown appeared.
+
+Fixed:
+- Restored safe internal identifiers without changing visible AFTER DARK branding.
+- Red Pill final sequence can continue to mission date, location and countdown.
+- Final message now reads: SEE YOU IN THE SIMULATION.
+- No visual redesign or other behavior changes.

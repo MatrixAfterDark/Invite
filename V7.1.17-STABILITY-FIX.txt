@@ -1,0 +1,13 @@
+v7.1.17 STABILITY FIX
+
+Built from v7.1.15 (the last known-good build), not from the broken v7.1.16.
+
+Changes:
+- Fixes the white-screen regression.
+- Morpheus phone audio now starts directly/synchronously from the Answer tap on mobile.
+- Morpheus plays at the natural source volume (no artificial gain/compression).
+- Timing follows the actual audio 'ended' event, so the longer phone clip is not cut off.
+- Adds restrained green aura and sparse Matrix glyphs BEHIND the phone while Morpheus speaks.
+- The ambience gradually builds and intensifies after Morpheus finishes.
+- The phone-feed remains continuous through phone fade -> dense green rain -> transition text -> white flash -> invitation.
+- All other v7.1.15 behavior is preserved.

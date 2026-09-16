@@ -1,0 +1,9 @@
+v7.1.34
+Fixed Mission Briefing rendering only.
+
+The briefing configuration intentionally contains <strong> and <br> formatting.
+The page was displaying those tags literally because the renderer used textContent.
+It now renders the trusted local briefing formatting as HTML.
+
+No wording changed.
+No phone, rabbit, audio, RSVP, rain, gallery, title, or final-screen behavior changed.

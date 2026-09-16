@@ -1,0 +1,5 @@
+v7.1.29
+- Removed the actual legacy circular phone hotspot overlay shown over the 1 key.
+- Whole-phone click/tap answering remains.
+- ANSWER THE CALL text remains clickable.
+- No other changes.

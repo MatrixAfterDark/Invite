@@ -1,0 +1,5 @@
+v7.1.19 — event name update
+
+Changed event name wording from LIBATIONS to AFTER DARK throughout the text-based site files.
+
+No design, layout, animation, audio, phone, Matrix rain, RSVP, or interaction changes.

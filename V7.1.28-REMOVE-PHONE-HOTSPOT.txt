@@ -1,0 +1,5 @@
+v7.1.28
+- Removes the old circular button hotspot from over the phone keypad.
+- The whole phone remains clickable/tappable to answer.
+- The existing ANSWER THE CALL text remains clickable.
+- No other changes.

@@ -1,0 +1,14 @@
+v7.1.33 — locked outfit gallery
+
+Final display order and descriptions:
+1. NEO — Long black coat, fitted black layers, narrow shades, minimalist cool.
+2. TRINITY — Black leather catsuit, oval shades, slicked-back hair, razor-sharp attitude.
+3. MORPHEUS — Long leather coat, sharp tailoring, iconic rimless shades, commanding presence.
+4. AGENT SMITH — Black suit, crisp white shirt, dark tie, severe rectangular shades.
+5. NIOBE — Structured leather, sleek shades, sculpted braids, tactical edge.
+6. SERAPH — Black tank, flowing silky overshirt, round shades, understated cool.
+7. PERSEPHONE — Blood-red leather, sculpted silhouette, sleek hair, decadent glamour.
+8. THE TWINS — Head-to-toe white, long coats, pale shades, platinum dreadlocks.
+
+No other site behavior or design changed.
+Persephone expects: assets/images/characters/persephone.jpg

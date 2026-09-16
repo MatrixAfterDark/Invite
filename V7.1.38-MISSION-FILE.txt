@@ -1,0 +1,5 @@
+v7.1.38
+Added only [ ACCESS MISSION FILE ] to the final Red Pill screen.
+It opens over the existing living Matrix rain with date, time, coordinates and attire.
+[CLOSE MISSION FILE] returns to the exact same final screen. No backward navigation.
+No other site behavior or content changed.
